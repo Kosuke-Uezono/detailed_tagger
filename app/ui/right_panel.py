@@ -81,17 +81,10 @@ class RightPanel(QWidget):
         self.undo_btn = QPushButton("Undo (最後の操作)")
 
         # Widgets for frame stepping (forward/backward and next file)
-        self.frame_group = QGroupBox("フレーム送り")
-        # Buttons for stepping frames; label indicates number of frames to move
-        self.btn_step_m30 = QPushButton("-30F")
-        self.btn_step_m10 = QPushButton("-10F")
-        self.btn_step_m1 = QPushButton("-1F")
-        self.btn_step_p1 = QPushButton("+1F")
-        self.btn_step_p10 = QPushButton("+10F")
-        self.btn_step_p30 = QPushButton("+30F")
-        # Button for jumping to the next file in the current session
+        # Widgets for file navigation (next/prev file). Frame stepping controls are displayed in MediaView.
+        self.file_group = QGroupBox("ファイル移動")
+        # Buttons for jumping to the next or previous file in the current session
         self.btn_next_file = QPushButton("次ファイル")
-        # Button for jumping to the previous file in the current session
         self.btn_prev_file = QPushButton("前ファイル")
 
         # Set up layouts
@@ -128,19 +121,12 @@ class RightPanel(QWidget):
         self.range_group.setLayout(range_layout)
         layout.addWidget(self.range_group)
 
-        # Frame stepping layout
-        frame_layout = QHBoxLayout()
-        frame_layout.addWidget(self.btn_step_m30)
-        frame_layout.addWidget(self.btn_step_m10)
-        frame_layout.addWidget(self.btn_step_m1)
-        frame_layout.addWidget(self.btn_step_p1)
-        frame_layout.addWidget(self.btn_step_p10)
-        frame_layout.addWidget(self.btn_step_p30)
-        # File navigation buttons: previous and next
-        frame_layout.addWidget(self.btn_prev_file)
-        frame_layout.addWidget(self.btn_next_file)
-        self.frame_group.setLayout(frame_layout)
-        layout.addWidget(self.frame_group)
+        # File navigation layout
+        file_layout = QHBoxLayout()
+        file_layout.addWidget(self.btn_prev_file)
+        file_layout.addWidget(self.btn_next_file)
+        self.file_group.setLayout(file_layout)
+        layout.addWidget(self.file_group)
 
         # Annotation list layout
         annot_layout = QVBoxLayout()
@@ -159,13 +145,7 @@ class RightPanel(QWidget):
         self.undo_btn.clicked.connect(self._handle_undo_clicked)
         self.annot_list.itemClicked.connect(self._handle_annot_item_clicked)
 
-        # Frame stepping signals
-        self.btn_step_m30.clicked.connect(lambda _=False: self.step_frames_requested.emit(-30))
-        self.btn_step_m10.clicked.connect(lambda _=False: self.step_frames_requested.emit(-10))
-        self.btn_step_m1.clicked.connect(lambda _=False: self.step_frames_requested.emit(-1))
-        self.btn_step_p1.clicked.connect(lambda _=False: self.step_frames_requested.emit(1))
-        self.btn_step_p10.clicked.connect(lambda _=False: self.step_frames_requested.emit(10))
-        self.btn_step_p30.clicked.connect(lambda _=False: self.step_frames_requested.emit(30))
+        # File navigation signals
         self.btn_next_file.clicked.connect(lambda _=False: self.next_file_requested.emit())
         self.btn_prev_file.clicked.connect(lambda _=False: self.prev_file_requested.emit())
 

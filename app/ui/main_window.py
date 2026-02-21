@@ -121,7 +121,14 @@ class MainWindow(QMainWindow):
         QShortcut(QKeySequence("A"), self, activated=lambda: self._step_frames(-1))
 
         # Frame stepping and next file from the right panel
+        # Frame stepping: from right panel (deprecated) and media view
         self.right_panel.step_frames_requested.connect(self._handle_step_frames)
+        # Connect frame stepping from the media view controls
+        try:
+            # MediaView may emit step_frames_requested when user presses a step button
+            self.media_view.step_frames_requested.connect(self._handle_step_frames)
+        except Exception:
+            pass
         self.right_panel.next_file_requested.connect(self._handle_next_file)
         # Previous file signal
         self.right_panel.prev_file_requested.connect(self._handle_prev_file)
