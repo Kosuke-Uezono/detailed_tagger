@@ -1,0 +1,4 @@
+PyQt6==6.7.1
+opencv-python==4.10.0.84
+pandas==2.2.2
+python-dateutil==2.9.0.post0

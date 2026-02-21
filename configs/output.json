@@ -1,0 +1,222 @@
+{
+  "version": "1.0",
+  "tabs": [
+    {
+      "name": "車両",
+      "buttons": [
+        {
+          "name": "乗用車",
+          "details": [
+            {
+              "name": "乗用車一般",
+              "shortcut": "1"
+            },
+            {
+              "name": "軽自動車",
+              "shortcut": "2"
+            },
+            {
+              "name": "ハッチバック/ステーションワゴン",
+              "shortcut": "3"
+            },
+            {
+              "name": "クーペ/セダン",
+              "shortcut": "4"
+            },
+            {
+              "name": "ピックアップトラック",
+              "shortcut": "5"
+            },
+            {
+              "name": "バン",
+              "shortcut": "6"
+            }
+          ]
+        },
+        {
+          "name": "トラック",
+          "details": [
+            {
+              "name": "軽トラック",
+              "shortcut": "7"
+            },
+            {
+              "name": "箱トラック",
+              "shortcut": "8"
+            },
+            {
+              "name": "キャリアトラック",
+              "shortcut": "9"
+            },
+            {
+              "name": "その他",
+              "shortcut": "0"
+            }
+          ]
+        },
+        {
+          "name": "二輪車",
+          "details": [
+            {
+              "name": "バイク",
+              "shortcut": "Q"
+            },
+            {
+              "name": "自転車",
+              "shortcut": "W"
+            }
+          ]
+        },
+        {
+          "name": "三輪車",
+          "details": [
+            {
+              "name": "子ども用三輪車",
+              "shortcut": "E"
+            },
+            {
+              "name": "トライク",
+              "shortcut": "R"
+            }
+          ]
+        },
+        {
+          "name": "緊急車両",
+          "details": [
+            {
+              "name": "救急車",
+              "shortcut": "T"
+            },
+            {
+              "name": "消防車",
+              "shortcut": "Y"
+            },
+            {
+              "name": "パトカー",
+              "shortcut": "U"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "標識",
+      "buttons": [
+        {
+          "name": "速度制限",
+          "details": [
+            {
+              "name": "10km",
+              "shortcut": "I"
+            },
+            {
+              "name": "20km",
+              "shortcut": "O"
+            },
+            {
+              "name": "30km",
+              "shortcut": "P"
+            },
+            {
+              "name": "40km",
+              "shortcut": "A"
+            },
+            {
+              "name": "50km",
+              "shortcut": "S"
+            },
+            {
+              "name": "60km",
+              "shortcut": "D"
+            },
+            {
+              "name": "70km",
+              "shortcut": "F"
+            },
+            {
+              "name": "80km",
+              "shortcut": "G"
+            },
+            {
+              "name": "90km",
+              "shortcut": "H"
+            },
+            {
+              "name": "100km",
+              "shortcut": "J"
+            },
+            {
+              "name": "110km",
+              "shortcut": "K"
+            },
+            {
+              "name": "120km",
+              "shortcut": "L"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "信号",
+      "buttons": [
+        {
+          "name": "筐体",
+          "details": [
+            {
+              "name": "横3灯",
+              "shortcut": "Z"
+            },
+            {
+              "name": "たて3灯",
+              "shortcut": "X"
+            },
+            {
+              "name": "横4灯",
+              "shortcut": "C"
+            },
+            {
+              "name": "たて4灯",
+              "shortcut": "V"
+            }
+          ]
+        },
+        {
+          "name": "矢印",
+          "details": [
+            {
+              "name": "→",
+              "shortcut": "B"
+            },
+            {
+              "name": "←",
+              "shortcut": "N"
+            },
+            {
+              "name": "↑",
+              "shortcut": "M"
+            },
+            {
+              "name": "斜め"
+            }
+          ]
+        },
+        {
+          "name": "表示",
+          "details": [
+            {
+              "name": "青"
+            },
+            {
+              "name": "黄色"
+            },
+            {
+              "name": "赤"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shortcuts": {}
+}

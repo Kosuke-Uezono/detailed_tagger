@@ -63,3 +63,4 @@ $ pyinstaller --name DetailedTagger --onefile --noconsole --add-data "detailed_t
 ## ライセンス
 
 このプロジェクトは社内利用を想定しており、ライセンスは指定されていません。外部への公開を行う場合は適切なライセンスを設定してください。# detailed_tagger
+# detailed_tagger

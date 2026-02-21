@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "tabs": [
+    {
+      "name": "車両",
+      "buttons": [
+        {
+          "name": "乗用車",
+          "details": [
+            { "name": "乗用車一般", "shortcut": "1" },
+            { "name": "軽自動車", "shortcut": "2" }
+          ]
+        },
+        {
+          "name": "トラック",
+          "details": [
+            { "name": "小型トラック", "shortcut": "3" },
+            { "name": "大型トラック", "shortcut": "4" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "標識",
+      "buttons": [
+        {
+          "name": "速度制限",
+          "details": [
+            { "name": "30km/h", "shortcut": "5" },
+            { "name": "50km/h", "shortcut": "6" }
+          ]
+        }
+      ]
+    }
+  ],
+  "shortcuts": {
+    "export": "Ctrl+S",
+    "undo": "Ctrl+Z",
+    "next_file": "N",
+    "step_1_forward": "D",
+    "step_1_back": "A",
+    "step_10_forward": "E",
+    "step_10_back": "Q",
+    "step_30_forward": "R",
+    "step_30_back": "F"
+  }
+}
